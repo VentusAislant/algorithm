@@ -9,8 +9,6 @@
 from collections import deque
 import heapq
 
-from torchmetrics.functional.pairwise import manhattan
-
 
 def bfs_maze(maze, start, end):
     row, col = len(maze), len(maze[0])
@@ -161,4 +159,3 @@ if __name__ == '__main__':
     path = a_star_maze(maze, start=(0, 0), end=(9, 9))
     print(len(path))
     show_path(maze, path)
-
